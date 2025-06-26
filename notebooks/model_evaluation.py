@@ -59,7 +59,7 @@ def evaluate_model(name, model, X_test, y_test, results):
 # --- Modeller ve Eğitim ---
 models = []
 
-# 1. Basit ANN
+# 1. ANN
 ann = tf.keras.Sequential([
     tf.keras.layers.Input(shape=(maxlen,)),
     tf.keras.layers.Dense(128, activation='relu'),
