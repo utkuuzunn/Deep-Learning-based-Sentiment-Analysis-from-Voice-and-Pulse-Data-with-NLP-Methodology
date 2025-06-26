@@ -1,1 +1,1 @@
-# Duygu Durumu Analizi Projesi
+# Duygu Durum Analizi Projesi
