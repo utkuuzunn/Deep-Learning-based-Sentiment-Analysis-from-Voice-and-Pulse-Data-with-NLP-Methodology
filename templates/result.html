@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analiz Sonucu</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <img src="{{ url_for('static', filename='uploads/logo.png') }}" class="logo" alt="Logo">
+  <h1>Analiz Sonucu</h1>
+  
+  <div class="container">
+    <p class="result" style="color: {{ color }}">{{ result }}</p>
+    <p><strong>Metin:</strong> {{ text }}</p>
+    <p class="positive_prob">Olumlu Olasılık: {{ positive_prob }}%</p>
+    <p class="negative_prob">Olumsuz Olasılık: {{ negative_prob }}%</p>
+    <a href="/" class="button">Yeni Analiz</a>
+  </div>
+
+  {% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hata</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <img src="{{ url_for('static', filename='uploads/logo.png') }}" class="logo" alt="Logo">
+  <h1>Ses ve Nabız Verilerinden Duygu Durumu Analizi</h1>
+  
+  <div class="container">
+    <p class="error">{{ error }}</p>
+    <a href="/" class="button">Geri Dön</a>
+  </div>
+
+  {% include 'footer.html' %}
+</body>
+</html>

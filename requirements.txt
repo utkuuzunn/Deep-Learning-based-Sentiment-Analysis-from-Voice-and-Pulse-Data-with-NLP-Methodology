@@ -1,0 +1,13 @@
+Flask
+tensorflow
+pandas
+matplotlib
+SpeechRecognition
+numpy
+keras
+gtts
+pyaudio
+flask-ngrok
+werkzeug
+seaborn
+nltk
