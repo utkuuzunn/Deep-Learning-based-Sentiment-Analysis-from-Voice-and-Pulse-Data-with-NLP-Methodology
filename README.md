@@ -1,41 +1,41 @@
-# Derin Öğrenme Tabanlı Doğal Dil İşleme ile Ses ve Nabız Verilerinden Duygu Durumu Analizi
+# Deep Learning-Based Sentiment Analysis from Voice and Pulse Data
 
-Bu proje, kullanıcının sesli ifadesini yazıya çevirerek duygu durum analizini yapar ve aynı anda Arduino üzerinden alınan nabız verisiyle duygu durumu arasında ilişki kurar.
+This project analyzes the user's emotional state by converting spoken expressions into text and performing sentiment analysis, while simultaneously correlating the results with real-time pulse data collected via Arduino.
 
-## Özellikler
-- Ses dosyasından metin çıkarımı
-- Derin öğrenme modeli ile metinden duygu analizi 
-- Duygu sınıflandırma (olumlu / olumsuz / nötr)
-- Nabız değerine göre fizyolojik durum yorumları
-- Flask tabanlı web arayüzü
-- Arduino ile gerçek zamanlı nabız ölçümü
+## Features
+- Speech-to-text conversion from audio files
+- Sentiment analysis from text using deep learning models 
+- Emotion classification (positive / negative / neutral)
+- Interpretation of physiological state based on pulse data
+- Web interface built with Flask
+- Real-time heart rate monitoring via Arduino
 
-## Kullanılan Modeller
+## Models Used
 
-Proje kapsamında farklı modeller karşılaştırılmıştır:
+Several models were trained and compared during the project:
 
-- Yapay Sinir Ağı (ANN)
-- Embedding + Dense
+- Artificial Neural Network (ANN)
+- Embedding + Dense Layers
 - Convolutional Neural Network (CNN)
 - Long Short-Term Memory (LSTM)
 
-## Kurulum
+## Installation
 ```
-git clone https://github.com/utkuuzunn/duygu-durumu-analizi.git
-cd duygu-durumu-analizi
+git clone https://github.com/utkuuzunn/Deep-Learning-based-Sentiment-Analysis-from-Voice-and-Pulse-Data-with-NLP-Methodology
+cd Deep-Learning-based-Sentiment-Analysis-from-Voice-and-Pulse-Data-with-NLP-Methodology
 pip install -r requirements.txt
 python app.py
 ```
 
-## Proje Yapısı
-- app.py: Ana uygulama
-- notebooks/: Model eğitimi ve karşılaştırması
-- arduino/: Nabız ölçüm devresi kodu
-- templates/: HTML şablonlar
-- static/: CSS ve görseller
-- model/: Eğitim verisi ve model dosyası
+## Project Structure
+- app.py: Main application file
+- notebooks/: Model training and comparison notebooks
+- arduino/: Code for the heart rate monitoring circuit
+- templates/: HTML templates
+- static/: CSS and image assets
+- model/: Training data and model files
 
-## Ekip
+## Project Team Members
 - İsmet Eren Coşkun
 - Utku Uzunhüseyin
 - Muhammet Emir Orhan
