@@ -27,6 +27,34 @@ pip install -r requirements.txt
 python app.py
 ```
 
+## Notes on Dataset and Pretrained Model
+
+This project was originally trained using a Turkish sentiment dataset, which is **not publicly shared** due to privacy and size restrictions.
+
+However, you can use **any sentiment dataset** in CSV format with two columns:
+- `text` (or `review`)
+- `label` (e.g., Positive/Negative or 1/0)
+
+To retrain the model with your own data, refer to the notebook:  
+`notebooks/model_training.py`
+
+---
+
+If you want to use the **pre-trained model directly**, you have two options:
+
+-  **Download from Google Drive:**  
+  [sentiment_analysis_model.h5](https://drive.google.com/uc?id=1_ZgI6ysAOUkQtN30QjTSu7bUuiZ-sb-S)
+
+**OR**
+
+-  **Download `model.zip`** located in the `model/` folder of this repository and extract it.
+
+After downloading, place the `.h5` file in the following path:
+model/sentiment_analysis_model.h5
+
+GitHub limits individual file uploads to 25MB, so the model file is hosted externally and also included as a compressed ZIP file.
+Once placed correctly, you can run the project with app.py without retraining the model.
+
 ## Project Structure
 - app.py: Main application file
 - notebooks/: Model training and comparison notebooks
