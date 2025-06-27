@@ -5,4 +5,5 @@ __pycache__/
 *.wav
 uploads/
 model/_data.csv
+model/sentiment_analysis_model.h5
 
