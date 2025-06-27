@@ -59,6 +59,7 @@ Once placed correctly, you can run the project with app.py without retraining th
 - app.py: Main application file
 - notebooks/: Model training and comparison notebooks
 - arduino/: Code for the heart rate monitoring circuit
+  > !!! If you do not have the actual Arduino hardware, you can still run the application by manually entering sample or estimated heart rate values in the web interface.
 - templates/: HTML templates
 - static/: CSS and image assets
 - model/: Training data and model files
